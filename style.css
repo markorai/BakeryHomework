@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 body{
     margin: 0;
@@ -86,8 +87,91 @@ body{
     align-items: center; 
    
 }
+.container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+     top: 55%;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%); 
 
+}
 
+.main-caption{
+    display: block;
+    width: 47.81rem;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 8px;
+}
+
+.description{
+ display: block;
+ width: 30%;
+ margin: 0 auto;
+ margin-top: 2rem;
+
+  
+}
+.description p {
+    color: #FFFFFF;
+    opacity: .8;
+    font-weight:bold;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.5rem;
+
+}
+
+/* Animation for menu button */
+@keyframes gradient {
+    0% {
+      background: radial-gradient(circle at center, rgba( 255, 125 , 125, 0 ) 0%, #fff 0%, #fff 100%);
+    }
+    25% {
+      background: radial-gradient(circle at center, rgba( 255, 125, 125, 0.3 ) 24%, #fff 25%, #fff 100%);
+    }
+    50% {
+      background: radial-gradient(circle at center, rgba(201, 201, 2, 0.623) 49%, #fff 50%, #fff 100%);
+    }
+    75% {
+      background: radial-gradient(circle at center, rgba(201, 201, 2, 0.623) 74%, #fff 75%, #fff 100%);
+    }
+    100% {
+      color: #fff;
+      background: radial-gradient(circle at center, rgba(201, 201, 2, 0.623) 99%, #fff 100%, #fff 100%);
+    }
+  }
+  button:active {
+    animation: gradient 100ms;
+    background: rgba(201, 201, 2, 0.623);
+    color: #fff;
+    box-shadow: none;
+  }
+ button{
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+    padding: 1rem 0;
+    border-radius: 5px;
+    background-color: #9E9C93;
+    color: #FFFFFF;
+    box-shadow: 0 12px 6px rgb(158, 156, 147,.7);
+    text-transform: uppercase;
+    font-family:'Playfair Display', serif ;
+    cursor: pointer;
+    margin-top: 2rem;
+ 
+}
+
+/* Telefonnn */
 @media screen and  (max-width:480px) {
     .logo{
         margin-top: 8px;
@@ -120,8 +204,36 @@ body{
         top: 0;
         height: 50vw;
         background-color: #56534C;
-
     }
+    .container{
+        overflow-x: hidden;
+        width: 100%;
+    }
+   .main-caption{
+       width: 100%;
+       font-size: 2.5rem;
+       letter-spacing: 0;
+      text-align: center;
+   }
+   .description{
+       width: 60%;
+       
+   }
+   .description p{
+       display: block;
+       width: 100%;
+       margin: 0;
+       padding: 0;
+       line-height: 1.2rem;
+       font-size: 1.2rem;
+      margin: 10px 0;
+   }
+   button{
+       width: 35%;
+       border-radius: 10px;
+   
+       
+   }
 
   .icons{
       display: none;
@@ -133,7 +245,7 @@ body{
 
 @media screen  and (min-width:481px) and (max-width:768px)  {
     .navbar{
-        height: 10vw;
+        height: 12vw;
         width: 100%;
     }
     .nav-links li a{
@@ -145,6 +257,28 @@ body{
     }
     .icons{
         display: none;
+    }
+    .container{
+        top: 60%;
+        
+    }
+    .main-caption{
+        width: 100%;
+        letter-spacing: 3px;
+    }
+    .description{
+        width: 50%;
+    }
+    .description p{
+       line-height: 1.7rem;
+       text-align: center;
+       font-size: 1.5rem ;
+        width: 100%;
+    }
+    button{
+        width: 25%;
+        padding: 1rem 0;
+        border-radius: 10px;
     }
 }
 
