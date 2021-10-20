@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+
+body{
+    
+    /* overflow: hidden; */
+    background: url(../images/6.jpg);
+
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;  
+    
+    
+}
+.logo{
+    font-family: 'Dancing Script', cursive;
+    color: #ffff;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    margin-left: 5%;
+    text-decoration: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #56534C;
+    height: 6vw;
+    opacity: .8;
+}
+
+.nav-links{
+    display: flex;
+    width: 100%;
+}
+.nav-links ul{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.nav-links li{
+    list-style-type: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Alegreya', serif;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin: .5rem 1rem;
+    display: block;
+
+}
+.nav-links a:hover{
+    background-color: rgba(201, 201, 2, 0.623);
+}
+.toggle_button{
+    position: absolute;
+    display: none;
+    top: 1.4rem;
+    right: 1.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width:1.9rem;
+    height: 1.3rem;
+}
+.toggle_button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #ffff;
+    border-radius: 10px;
+}
+.icons{
+    display: flex;
+    margin-right: 10%;
+   
+}
+.icons a i{
+    color: #fff;
+    padding: 0 1rem;
+    display: flex;
+    justify-content:center;
+    align-items: center; 
+   
+}
+
+.container{
+    position: relative;
+    bottom: -5vmax;
+}
+
+.text{
+	padding:6px;
+
+	
+	  
+}
+
+
+
+
+
+
+
+div.gallery {
+    /* border: 1px solid #ccc; */
+    margin-bottom: 11px;
+	overflow: hidden;
+  }
+  
+  /* div.gallery:hover {
+    border: 1px solid #777;
+  } */
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+
+	-webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  }
+
+  .gallery:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+  }
+  
+  /* div.desc {
+    padding: 15px;
+    text-align: center;
+  } */
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 32.99999%;
+  }
+  
+  /* @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 9px 3px;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  } */
+  
+  /* .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
