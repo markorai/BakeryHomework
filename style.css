@@ -1,16 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+header{
+    min-height: 60vw;
+    width: 100%;
+    background: url(./images/Landing\ page.png);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;  
+   
+}
 
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    background: url(./images/Landing\ page.png);
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-size: cover;  
+    
 }
 .logo{
     font-family: 'Dancing Script', cursive;
@@ -87,13 +94,13 @@ body{
     align-items: center; 
    
 }
-.container{
+.section-one{
     display: flex;
     flex-direction: column;
     position: absolute;
     width: 100%;
      top: 55%;
-    left: 50%;
+     left: 55%;
     -ms-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%); 
@@ -112,19 +119,19 @@ a{
     color: #ffffff;
     font-size: 3rem;
     font-weight: 900;
-    letter-spacing: 8px;
+    letter-spacing: 15px;
 }
 
-.description{
+.main-description{
  display: block;
  width: 30%;
  margin: 0 auto;
- margin-top: 2rem;
+ margin-top: 4rem;
 
   
 }
-.description p {
-    color: #FFFFFF;
+.main-description p {
+    color: #ffffff;
     opacity: .8;
     font-weight:bold;
     font-size: 1.3rem;
@@ -133,33 +140,8 @@ a{
 
 }
 
-/* Animation for menu button */
-/*
- @keyframes gradient {
-    0% {
-      background: radial-gradient(circle at center, rgba(201, 201, 2, 0.623) 0%, #fff 0%, #fff 100%);
-    }
-    25% {
-      background: radial-gradient(circle at center, rgba(201, 201, 2, 0.623) 24%, #fff 25%, #fff 100%);
-    }
-    50% {
-      background: radial-gradient(circle at center, rgba(201, 201, 2, 0.623) 49%, #fff 50%, #fff 100%);
-    }
-    75% {
-      background: radial-gradient(circle at center, rgba(201, 201, 2, 0.623) 74%, #fff 75%, #fff 100%);
-    }
-    100% {
-      color: #fff;
-      background: radial-gradient(circle at center, rgba(201, 201, 2, 0.623) 99%, #fff 100%, #fff 100%);
-    }
-  }
-  button:active {
-    animation: gradient 100ms;
-    background: rgba(201, 201, 2, 0.623);
-    color: #fff;
-    box-shadow: none;
-  } 
-  */
+
+
  button{
     display: block;
     margin: 0 auto;
@@ -181,9 +163,170 @@ button:hover{
     box-shadow: inset  300px 0 0 0  rgba(201, 201, 2, 0.623);
 }
 
+.section-two{
+    min-height: 60vw;
+    display: flex;
+}
+.side1{
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+margin-top: 3%;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 3%;
+}
+.about h1{
+    font-size: 2rem;
+    text-align: center;
+    font-family: Alegreya-Bold,AdobeInvisFont,MyriadPro-Regular;
+    color: #56534C;
+    margin-bottom: .5rem ;
+    margin-top: 1.3rem;
+}
+.s2-description{
+    display:block;
+  text-align: center;
+  line-height: 0;
+   padding: 0;
+   margin: 0;
+   text-transform: uppercase;
+   color: #b19539;
+   width: 100%;
+   font-size: .6rem;
+   line-height: 0;
+}
+.s2-description-main{
+    display: block;
+    width: 50%;
+   margin: 0 auto;
+   margin-top: 7%;
+   text-align: center;
+   font-family: 'Alegreya', serif;
+   margin-top: 3%;
+}
+.cook{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 5%;
+}
+.cook p{
+    display: flex;
+    justify-content: center;
+}
+.cook-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+}
+.left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 1rem;
+    border-top: 1px solid rgba(194, 126, 0, 0.897);
+    border-bottom: 1px solid rgba(194, 126, 0, 0.897);
+
+    
+}
+.right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 1rem;
+    border-top: 1px solid rgba(194, 126, 0, 0.897);
+    border-bottom: 1px solid rgba(194, 126, 0, 0.897);
+}
+
+.cook-img > img{
+    display: flex;
+    justify-content: center;
+    width: 102px;
+    height: 102px;    
+    object-fit: cover;
+    object-position: 20% 10%;
+    border-radius: 50%;
+}
+.sign{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.q1{
+    display: flex;
+    justify-content: flex-start;
+    top: 0;
+    left: 0;
+}
+.q2{
+    display: flex;
+    align-items: flex-end;
+    top: 0;
+    right: 0;
+}
+.gallery{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+     width: 100%;
+   justify-content: center;
+   align-items: center;
+   margin: 0 1rem;
+   margin-bottom: 8%;
+   
+}
+.row{
+    display: flex;
+    width: 100%;
+}
+
+.row > img {
+    display: block;
+    width: calc(80% / 2);
+    height: 200px;
+    padding: .5rem .8rem;
+    outline: 2px solid #fff;
+    outline-offset: -12px;
+    padding: 0 .5rem;
+}
+.gallery .watermark{
+  
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 15%;
+    margin: auto;
+    transform: translateY(-50%);
+    max-width: 15%;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(204, 136, 10);
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: #fff;
+    opacity: .8;
+    border-radius: 50%;
+    padding: 4rem 1.5rem;
+    z-index: 1;
+}
 
 
+
+
+
+/* TELEFON */
 @media screen and  (max-width:480px) {
+    header{
+        min-height: 150vw;
+    }
     .logo{
         margin-top: 8px;
     }
@@ -216,9 +359,10 @@ button:hover{
         height: 50vw;
         background-color: #56534C;
     }
-    .container{
+    .section-one{
         overflow-x: hidden;
         width: 100%;
+        top: 40%;
     }
    .main-caption{
        width: 100%;
@@ -226,11 +370,12 @@ button:hover{
        letter-spacing: 0;
       text-align: center;
    }
-   .description{
+   .main-description{
        width: 60%;
+       margin-top: 1rem;
        
    }
-   .description p{
+   .main-description p{
        display: block;
        width: 100%;
        margin: 0;
@@ -245,16 +390,57 @@ button:hover{
    
        
    }
+   .section-two{
+       min-height: 120vw;
+   }
 
   .icons{
       display: none;
   }
- 
-  
-  
+ .hide{
+     visibility: hidden;
+ }
+
+
+ .section-two{
+     justify-content: center;
+     flex-direction: column;
+ }
+ .about{
+     justify-content: center;
+ }
+ .side1{
+     display: flex;
+     justify-content: flex-start;
+     flex-direction: column;
+     
+ }
+ .s2-description{
+     font-size: .7rem;
+ }
+ .s2-description-main{
+     margin-top: 10%;
+     width: 70%;
+}
+ .cook{
+     justify-content: center;
+     margin-top: 10%;
+ }
+.gallery{
+    margin:0 1rem;
 }
 
+.gallery .watermark{
+    max-width: 25%;
+}  
+  
+}
+/* TABLET */
 @media screen  and (min-width:481px) and (max-width:768px)  {
+   
+    header{
+        min-height: 100vw;
+    }
     .navbar{
         height: 12vw;
         width: 100%;
@@ -269,18 +455,22 @@ button:hover{
     .icons{
         display: none;
     }
-    .container{
-        top: 60%;
+    .section-one{
+        top: 50%;
         
+    }
+    .about{
+        margin-top: 40%;
     }
     .main-caption{
         width: 100%;
         letter-spacing: 3px;
     }
-    .description{
+    .main-description{
         width: 50%;
+        margin-top: 2rem;
     }
-    .description p{
+    .main-description p{
        line-height: 1.7rem;
        text-align: center;
        font-size: 1.5rem ;
@@ -291,11 +481,55 @@ button:hover{
         line-height: 2.5rem;
         border-radius: 10px;
     }
-   
+    .section-two{
+        justify-content: center;
+        flex-direction: column;
+        min-height: 150vw;
+    }
+    .about{
+        justify-content: center;
+        margin-top: 0;
+
+    }
+    .side1{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        
+    }
+    .s2-description{
+        font-size: .7rem;
+    }
+    .s2-description-main{
+        margin-top: 10%;
+        width: 70%;
+   }
+    .cook{
+        justify-content: center;
+        margin-top: 10%;
+    }
+   .gallery{
+       margin:0 1rem;
+   }
+   .gallery .watermark{
+       width: 25%;
+       right: 3%;
+   }
+   .gallery .row{
+       justify-content: center;
+   }
 }
  /* 768px do 1150px */
  @media screen and (min-width:768px) and (max-width:1150px)  {
+    header{
+        min-height: 100vw;
+    }
     button{
         width: 15%;
     }
+    .gallery .watermark{
+        
+        max-width: 30%
+    }
+    
 }
