@@ -142,7 +142,7 @@ a{
 
 
 
- button{
+ .section-one button{
     display: block;
     margin: 0 auto;
     width: 10%;
@@ -159,7 +159,7 @@ a{
     box-shadow: inset 0 0 0 0 rgba(201, 201, 2, 0.623) ;
     transition: ease-out 0.3s;
 }
-button:hover{
+.section-one button:hover{
     box-shadow: inset  300px 0 0 0  rgba(201, 201, 2, 0.623);
 }
 
@@ -400,7 +400,156 @@ margin-top: 3%;
     border-radius: 50%;
     outline: none;
 }
+.section-four{
+    display: flex;
+    justify-content:center;
+    min-height: 60vw;
+    width: 100%;
+    background: url(./images/s3\ background.png);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover; 
+}
+.breakfast{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    flex: 1;
+}
+.breakfast > .row{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+    margin-top: 2%;
+}
+.breakfast > .row > h2{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0;
+    width: 100%;
+    font-size: 3rem;
+    letter-spacing: 3px;
 
+   
+}
+.breakfast > .row > p{
+    text-align: center;
+    color:#fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: rgb(233, 170, 53);
+    width:100%;
+}
+.row-custom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3%;
+
+}
+.row-custom > h3{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0;
+    width: 100%;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    font-family: 'Alegreya', serif;
+    
+}
+.row-custom > p{
+    text-align: center;
+    color:#fff;
+    margin: .5rem 0;
+    font-size: 1rem;
+    font-family:'Playfair Display', serif ;
+
+}
+.row-custom > .price{
+    color: rgb(233, 170, 53);
+    font-size: 2rem;
+    font-family: 'Alegreya', serif;
+
+}
+.row-custom-card{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    background-color: white;
+    margin-right: 5%;
+    margin-top: 8%;
+    height: fit-content;
+    outline: 1px dotted rgb(121, 118, 118);
+    outline-offset: -12px;
+}
+.row-custom-card > .heading{
+    display: flex;   
+  justify-content: space-between;
+  margin-top: 12%;
+}
+
+ .i1 {
+     padding-left: 10%;
+}
+.i2{
+    padding-right: 10%;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.icon > i{
+    display: inline-block;
+    color: rgb(121, 118, 118);
+   border: 1px solid rgb(121, 118, 118);
+   padding: .7rem .7rem;
+   border-radius: 50%; 
+
+}
+.custom-card-description{
+    display: flex;
+    flex-direction: column;
+    margin-top: 7%;
+   
+
+}
+.custom-card-description > h2{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    color: #56534C;
+    font-size: 2rem;
+}
+.custom-card-description > p{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    color: #56534C;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    opacity: .8;
+}
+.custom-card-description a{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    padding-bottom: 2rem;
+
+}
+.custom-card-description button{
+    padding: .3rem 2rem;
+    color: #A47D5E;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
 /* TELEFON */
 @media screen and  (max-width:480px) {
     header{
@@ -463,7 +612,7 @@ margin-top: 3%;
        font-size: 1.2rem;
       margin: 10px 0;
    }
-   button{
+   .section-one  button{
        width: 35%;
        border-radius: 10px;
    
@@ -536,6 +685,28 @@ margin-top: 3%;
     display: block;
     width: 100%;
 }
+.section-four{
+    display: block;
+    margin: 0;
+}
+.breakfast{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.breakfast >.row > p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.row-custom > p{
+    opacity: .9;
+}
+.row-custom-card{
+    display: flex;
+    width: 100%;
+}
   
 }
 /* TABLET */
@@ -579,7 +750,7 @@ margin-top: 3%;
        font-size: 1.5rem ;
         width: 100%;
     }
-    button{
+    .section-one button{
         width: 25%;
         line-height: 2.5rem;
         border-radius: 10px;
@@ -649,13 +820,16 @@ margin-top: 3%;
     display: flex;
     justify-content: center;
 }
+.row-custom-card{
+    width: 40%;
+}
 }
  /* 768px do 1150px */
  @media screen and (min-width:768px) and (max-width:1150px)  {
     header{
         min-height: 100vw;
     }
-    button{
+   .section-one button{
         width: 15%;
     }
     .gallery .watermark{
@@ -664,3 +838,29 @@ margin-top: 3%;
     }
     
 }
+@media screen and (min-width:480px) and (max-width:600px){
+    
+    .section-four{
+        display: block;
+        margin: 0;
+    }
+    .breakfast{
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    
+    .breakfast >.row > p{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .row-custom > p{
+        opacity: .9;
+    }
+    .row-custom-card{
+        display: flex;
+        width: 100%;
+    }
+} 
+
