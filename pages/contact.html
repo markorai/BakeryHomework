@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.google.com/fonts#UsePlace:use/Collection:Alegreya" />
    
-    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
     <link rel="stylesheet" href="../styles/contact.css">
     <title>Bakery</title>
 </head>
 <body>
 <header>
     <nav class="navbar">
-       <a class="logo" href="./index.html">Gustoso</a>
+       <a class="logo" href="../index.html">Gustoso</a>
        <a href="#" class="toggle_button">
            <span class="bar"></span>
            <span class="bar"></span>
@@ -21,9 +21,10 @@
        </a>
             <div class="nav-links">
                 <ul>
-                    <li><a href="index.html">Welcome</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/about.html">About us</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
+
                 </ul>
             </div>
             <div class="icons">
@@ -35,46 +36,86 @@
 </header>
 
 
-<div class="container">
+<main>
 
-    <div class="map">
-        <iframe width="40%" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=42.449637074912104, 19.2428173270346&amp;t=m&amp;z=16&amp;output=embed"></iframe>
+
+<div class="form-wrapper">
+  <h2>contact us</h2>
+  <form action="#" method="post">
+    <div class="form-group">
+      <label for="name">name<span class="star">*</span></label>
+      <input
+        type="text"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
     </div>
-
-
-
-    <div class="con">  
-        <form id="contact" action="" method="post">
-          <h3>Contact us</h3>
-          <h4>for more information </h4>
-          <fieldset>
-            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-          </fieldset>
-          <fieldset>
-            <input placeholder="Your Email Address" type="email" tabindex="2" required>
-          </fieldset>
-          <fieldset>
-            <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
-          </fieldset>
-          <fieldset>
-            <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
-          </fieldset>
-          <fieldset>
-            <button class="butt" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-          </fieldset>
-          
-        </form>
-      </div>
-
-
-<div class="address">
-  <p><spam>Address:</spam> Dalmatinska ulica</p>
-  <p><spam>Email:</spam> bakery@gmail.com</p>
-  <p><spam>Phone:</spam> 067324234</p>
+    <div class="form-group">
+      <label for="subject"
+        >subject&nbsp;<span class="optional">(optional)</span></label
+      >
+      <input
+        type="text"
+        id="subject"
+        class="form-control"
+        placeholder="Enter your subject"
+      />
+    </div>
+    <div class="form-group">
+      <label for="email">email<span class="star">*</span></label>
+      <input
+        type="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="message">message<span class="star">*</span></label>
+      <textarea
+        id="message"
+        class="form-control"
+        placeholder="Your message here..."
+        required
+        cols="30"
+        rows="10"
+      ></textarea>
+    </div>
+    <button class="submit-btn">send message</button>
+  </form>
 </div>
 
+</main>
+<footer>
 
-</div>
-<script src="./app.js"></script>
+  <nav class="navbarbottom">
+      
+    
+           <div class="navlinks">
+               <ul>
+                   <li><a href="../index.html">OUR MENU</a></li>
+                   <li><a href="../pages/gallery.html">GALLERY</a></li>
+                   
+                   <li><a href="#">CULTURE</a></li>
+               </ul>
+
+               <a class="log" href="../index.html">Gustoso</a>
+
+               <ul>
+                  <li><a href="#">EVENTS</a></li>
+                  <li><a href="#">CATERING</a></li>
+                  <li><a href="#">VISIT US</a></li>
+              
+               </ul>
+           </div>
+           
+</nav>
+
+</footer>
+
+<script src="../app.js"></script>
 </body>
 </html>
