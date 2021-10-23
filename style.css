@@ -547,12 +547,19 @@ margin-top: 3%;
 
 }
 .custom-card-description{
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-top: 7%;
-   
-
 }
+.vector-bg{
+    position: absolute;
+    bottom: -30px;
+    right:-300px;
+    opacity: .5;
+   
+}
+
 .custom-card-description > h2{
     display: block;
     margin: 0 auto;
@@ -580,10 +587,17 @@ margin-top: 3%;
 
 }
 .custom-card-description button{
-    padding: .3rem 2rem;
-    color: #A47D5E;
+    padding: .8rem 3rem;
+    color: #b37d50;
     text-transform: uppercase;
     font-size: 1rem;
+    background-color: #fff;
+    border: 1px solid rgb(165, 154, 154);
+    cursor: pointer;
+    font-weight: 400;
+}
+.custom-card-description button:hover{
+    background-color: rgb(207, 204, 204);
 }
 .section-five{
     min-height: 60vw;
@@ -611,9 +625,9 @@ margin-top: 3%;
 }
 .caption > h2{
     text-align: center;
-    margin-top: 5%;
+    margin-top: 7%;
     margin-bottom: 0;
-    font-size: 2rem;
+    font-size: 2.5rem;
    color:  #56534C;
 }
 .caption > p{
@@ -637,6 +651,8 @@ margin-top: 3%;
     flex-direction: column;
     justify-content: flex-start;
     width: 50%;
+    margin-bottom: 5%;
+
 }
 .cards  .item{
   display: flex;
@@ -678,6 +694,7 @@ margin-top: 3%;
     justify-content: center;
     margin-top: 3%;
     margin-right: 3%;
+    margin-top: 3%;
     
 }
 .main-content button{
@@ -693,9 +710,72 @@ margin-top: 3%;
     color: #DFC691;
     font-weight: bold;
     cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .main-content button:hover{
     background-color: rgb(179, 159, 51);
+    color: #fff;
+}
+.navbarbottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    height: 11vw;
+    opacity: .8;
+    border-color: black;
+    border-bottom: 20px;
+    border-bottom-width: thin;
+    
+}
+
+
+
+.navlinks{
+    display: flex;
+    width: 100%;
+}
+.navlinks ul{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+   border-top: 1px solid rgb(145, 137, 137);
+  border-bottom: 1px solid rgb(145, 137, 137);
+}
+
+
+
+.navlinks li{
+    list-style-type: none;
+}
+.navlinks a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Alegreya', serif;
+    font-size: 1.3rem;
+    padding: 1rem;
+    margin: .5rem 1rem;
+    display: block;
+
+}
+.navlinks .log{
+    font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+}
+.navlinks a:hover{
+    background-color: rgba(201, 201, 2, 0.623);
+}
+
+
+.navlinks.log{
+    font-family: 'Dancing Script', cursive;
+    color: #ffff;
+    letter-spacing: 3px;
+    font-size: 3rem;
+    margin-left: 5%;
+    text-decoration: none;
 }
 /* TELEFON */
 @media screen and  (max-width:480px) {
@@ -868,7 +948,6 @@ margin-top: 3%;
 .cards{
     width: 100%;
     margin-top: 10%;
-
 }
 .caption > h2{
     font-size: 1.2rem;
@@ -888,7 +967,21 @@ margin-top: 3%;
 .main-content-card button{
     padding: .5rem 1rem;
 }
-  
+.navbarbottom{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.navlinks{
+    display: flex;
+    flex-direction: column;
+}
+.navlinks > ul{
+    display: flex;
+}
+.navlinks > ul > li >a{
+    font-size: 1rem;
+}
 }
 /* TABLET */
 @media screen  and (min-width:481px) and (max-width:768px)  {
@@ -911,9 +1004,10 @@ margin-top: 3%;
         display: none;
     }
     .section-one{
-        top: 55%;
+        top: 50%;
         
     }
+   
     .about{
         margin-top: 40%;
     }
@@ -1011,6 +1105,7 @@ margin-top: 3%;
 }
 .row-custom-card{
     width: 40%;
+    margin-bottom: 2%;
 }
 .main-content{
     flex-direction: column;
@@ -1021,7 +1116,7 @@ margin-top: 3%;
 
 }
 .caption > h2{
-    font-size: 1.2rem;
+    font-size: 1.7rem;
 }
 .caption > p{
    text-align: center;
@@ -1039,11 +1134,35 @@ margin-top: 3%;
     padding: 1rem 1rem;
     left: 1;
 }
+.navbarbottom{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.navlinks{
+    display: flex;
+    flex-direction: column;
+}
+.navlinks > ul{
+    display: flex;
+}
+.navlinks .log{
+    display: flex;
+    justify-content: center;
+}
+.navlinks > ul > li >a{
+    font-size: 1rem;
+}
+
 }
  /* 768px do 1150px */
  @media screen and (min-width:768px) and (max-width:1150px)  {
     header{
         min-height: 100vw;
+    }
+    .section-one{
+        top: 50%;
+        
     }
    .section-one button{
         width: 15%;
@@ -1055,6 +1174,25 @@ margin-top: 3%;
     .main-content-card button{
         padding: .5rem 1rem;
         left: 1;
+    }
+    .navbarbottom{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+    .navlinks{
+        display: flex;
+        flex-direction: column;
+    }
+    .navlinks > ul{
+        display: flex;
+    }
+    .navlinks .log{
+        display: flex;
+        justify-content: center;
+    }
+    .navlinks > ul > li >a{
+        font-size: 1rem;
     }
     
 }
